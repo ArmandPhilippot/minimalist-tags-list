@@ -1,0 +1,58 @@
+# Copyright (C) 2020 Minimalist-Tags-List
+# This file is distributed under the same license as the Minimalist-Tags-List package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Minimalist-Tags-List\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Armand Philippot <contact@armandphilippot.com>\n"
+"Report-Msgid-Bugs-To: https://github.com/ArmandPhilippot/minimalist-tags-"
+"list/issues\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: \n"
+"Language: fr_FR\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: class-minimalist-tags-list.php:66
+msgid "Display a list or a dropdown of tags as widget."
+msgstr ""
+"Afficher une liste ou un menu déroulant d'étiquettes sous forme de "
+"widget."
+
+#: class-minimalist-tags-list.php:70
+msgid "Tags List"
+msgstr "Liste d'étiquettes"
+
+#: class-minimalist-tags-list.php:93
+msgid "Tags"
+msgstr "Étiquettes"
+
+#: class-minimalist-tags-list.php:114
+msgid "Select Tags"
+msgstr "Sélectionner les étiquettes"
+
+#: class-minimalist-tags-list.php:168
+msgid "Title:"
+msgstr "Titre :"
+
+#: class-minimalist-tags-list.php:177
+msgid "Display as dropdown"
+msgstr "Afficher comme liste déroulante"
+
+#: class-minimalist-tags-list.php:183
+msgid "Show post counts"
+msgstr "Afficher le nombre d'articles"
+
+#: class-minimalist-tags-list.php:189
+msgid "Show hierarchy"
+msgstr "Afficher la hiérarchie"

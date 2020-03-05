@@ -1,0 +1,30 @@
+{
+  "name": "armandphilippot/minimalist-tags-list",
+  "description": "A plugin to display list or dropdown of tags.",
+  "keywords": [
+    "wordpress", "tags", "widget"
+  ],
+  "license": "GPL-2.0",
+  "authors": [{
+    "name": "Armand Philippot",
+    "homepage": "https://www.armandphilippot.com/",
+    "email": "contact@armandphilippot.com"
+  }],
+  "type": "wordpress-plugin",
+  "support": {
+    "issues": "https://github.com/ArmandPhilippot/minimalist-tags-list/issues",
+    "source": "https://github.com/ArmandPhilippot/minimalist-tags-list"
+  },
+  "require": {
+    "composer/installers": "~1.0"
+  },
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.5",
+		"wp-coding-standards/wpcs": "^2.2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.6.2"
+	},
+	"scripts": {
+		"wplint": "phpcs --standard=WordPress",
+		"wpfix": "phpcbf --standard=WordPress"
+	}
+}
