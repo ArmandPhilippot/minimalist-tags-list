@@ -1,4 +1,4 @@
-# Minimalsit-Tags-List
+# Minimalist-Tags-List
 
 This WordPress plugin create a widget to display list or dropdown of tags.
 
