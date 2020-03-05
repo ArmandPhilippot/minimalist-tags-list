@@ -35,7 +35,7 @@ You can download this plugin on Github, then extract it in `/wp-content/plugins/
 
 ## Screenshot
 
-![Image of Yaktocat](./screenshot.jpg)
+![Screenshot](./screenshot.jpg)
 
 This plugin contains no style. This screenshot shows you the two possibilities suited to a theme.
 
