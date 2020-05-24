@@ -4,7 +4,7 @@ This WordPress plugin create a widget to display list or dropdown of tags.
 
 ## Description
 
-This WordPress plugin is a widget displaying tags list like the native Categories widget of WordPress. By default, WordPress only offers a tags cloud. You can display hierarchy, posts count or use a dropdown menu.
+This WordPress plugin is a widget displaying tags list like the native Categories widget of WordPress. By default, WordPress only offers a tags cloud. With this widget, you can display a list or use a dropdown menu and display the number of posts or not.
 
 ## Installation
 
@@ -41,9 +41,10 @@ This plugin contains no style. This screenshot shows you the two possibilities s
 
 ## Changelog
 
-### 1.0
-
--   Initial version
+| Version | Date       | Notes                                                               |
+| ------- | ---------- | ------------------------------------------------------------------- |
+| v1.0.1  | 2020-05-24 | Removal of the hierarchy option since tags have no hierarchy. |
+| v1.0.0  | 2020-03-05 | Initial version                                                      |
 
 ## License
 

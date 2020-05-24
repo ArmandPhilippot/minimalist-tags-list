@@ -16,7 +16,7 @@
  * Plugin Name: Tags List
  * Plugin URI:  https://github.com/ArmandPhilippot/minimalist-tags-list
  * Description: Display a list or a dropdown of tags as widget.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Armand Philippot
  * Author URI:  https://www.armandphilippot.com
  * License:     GPL v2 or later
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'MINIMALIST_TAGS_LIST_VERSION', '1.0.0' );
+define( 'MINIMALIST_TAGS_LIST_VERSION', '1.0.1' );
 
 /**
  * Load text domain files
@@ -90,15 +90,13 @@ class Minimalist_Tags_List extends WP_Widget {
 	public function widget( $args, $instance ) {
 		static $first_dropdown = true;
 
-		$title        = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Tags', 'Minimalist-Tags-List' );
-		$title        = apply_filters( 'widget_title', $title, $instance, $this->id_base );
-		$count        = ! empty( $instance['count'] ) ? '1' : '0';
-		$hierarchical = ! empty( $instance['hierarchical'] ) ? '1' : '0';
-		$dropdown     = ! empty( $instance['dropdown'] ) ? '1' : '0';
-		$tags_args    = array(
+		$title     = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Tags', 'Minimalist-Tags-List' );
+		$title     = apply_filters( 'widget_title', $title, $instance, $this->id_base );
+		$count     = ! empty( $instance['count'] ) ? '1' : '0';
+		$dropdown  = ! empty( $instance['dropdown'] ) ? '1' : '0';
+		$tags_args = array(
 			'orderby'      => 'name',
 			'show_count'   => $count,
-			'hierarchical' => $hierarchical,
 		);
 		echo wp_kses_post( $args['before_widget'] );
 		if ( ! empty( $title ) ) {
@@ -159,10 +157,9 @@ class Minimalist_Tags_List extends WP_Widget {
 	 * @param array $instance The widget options.
 	 */
 	public function form( $instance ) {
-		$title        = ! empty( $instance['title'] ) ? $instance['title'] : '';
-		$count        = isset( $instance['count'] ) ? (bool) $instance['count'] : false;
-		$hierarchical = isset( $instance['hierarchical'] ) ? (bool) $instance['hierarchical'] : false;
-		$dropdown     = isset( $instance['dropdown'] ) ? (bool) $instance['dropdown'] : false;
+		$title    = ! empty( $instance['title'] ) ? $instance['title'] : '';
+		$count    = isset( $instance['count'] ) ? (bool) $instance['count'] : false;
+		$dropdown = isset( $instance['dropdown'] ) ? (bool) $instance['dropdown'] : false;
 		echo '<p>';
 		echo '<label for="' . esc_attr( $this->get_field_id( 'title' ) ) . '">';
 		echo esc_html__( 'Title:', 'Minimalist-Tags-List' );
@@ -181,12 +178,6 @@ class Minimalist_Tags_List extends WP_Widget {
 		echo ' />';
 		echo '<label for="' . esc_attr( $this->get_field_id( 'count' ) ) . '">';
 		echo esc_html__( 'Show post counts', 'Minimalist-Tags-List' );
-		echo '</label><br />';
-		echo '<input class="checkbox" id="' . esc_attr( $this->get_field_id( 'hierarchical' ) ) . '" name="' . esc_attr( $this->get_field_name( 'hierarchical' ) ) . '" type="checkbox" ';
-		checked( $hierarchical );
-		echo ' />';
-		echo '<label for="' . esc_attr( $this->get_field_id( 'hierarchical' ) ) . '">';
-		echo esc_html__( 'Show hierarchy', 'Minimalist-Tags-List' );
 		echo '</label>';
 		echo '</p>';
 	}
@@ -202,11 +193,10 @@ class Minimalist_Tags_List extends WP_Widget {
 	 * @return array Updated settings to save.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance                 = $old_instance;
-		$instance['title']        = sanitize_text_field( $new_instance['title'] );
-		$instance['count']        = ! empty( $new_instance['count'] ) ? 1 : 0;
-		$instance['hierarchical'] = ! empty( $new_instance['hierarchical'] ) ? 1 : 0;
-		$instance['dropdown']     = ! empty( $new_instance['dropdown'] ) ? 1 : 0;
+		$instance             = $old_instance;
+		$instance['title']    = sanitize_text_field( $new_instance['title'] );
+		$instance['count']    = ! empty( $new_instance['count'] ) ? 1 : 0;
+		$instance['dropdown'] = ! empty( $new_instance['dropdown'] ) ? 1 : 0;
 
 		return $instance;
 	}

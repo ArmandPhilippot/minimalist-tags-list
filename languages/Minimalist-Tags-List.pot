@@ -1,5 +1,6 @@
 # Copyright (C) 2020 Minimalist-Tags-List
 # This file is distributed under the same license as the Minimalist-Tags-List package.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimalist-Tags-List\n"
@@ -11,10 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/ArmandPhilippot/minimalist-tags-list/issues\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: class-minimalist-tags-list.php:66
 msgid "Display a list or a dropdown of tags as widget."
@@ -28,22 +32,18 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: class-minimalist-tags-list.php:114
+#: class-minimalist-tags-list.php:112
 msgid "Select Tags"
 msgstr ""
 
-#: class-minimalist-tags-list.php:168
+#: class-minimalist-tags-list.php:165
 msgid "Title:"
 msgstr ""
 
-#: class-minimalist-tags-list.php:177
+#: class-minimalist-tags-list.php:174
 msgid "Display as dropdown"
 msgstr ""
 
-#: class-minimalist-tags-list.php:183
+#: class-minimalist-tags-list.php:180
 msgid "Show post counts"
-msgstr ""
-
-#: class-minimalist-tags-list.php:189
-msgid "Show hierarchy"
 msgstr ""
